@@ -37,7 +37,7 @@ function App() {
   const [plot, setPlot] = useState(0);
   
   useEffect(() => {
-    fetch('/plot').then(
+    fetch('/plot_datautils').then(
       res => res.json()
       ).then(data => {setPlot(data);});}, []);
     // console.log(plot)
